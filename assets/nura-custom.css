@@ -4,7 +4,7 @@
    ============================================ */
 
 /* Google Fonts fallback */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
 
 /* ============================================
    CSS Custom Properties
@@ -17,7 +17,7 @@
   --nura-sable: #E8DED1;
   --nura-warm: #D4B896;
   --nura-cream: #F5F0E8;
-  --nura-font-heading: 'Cormorant Garamond', 'Times New Roman', serif;
+  --nura-font-heading: 'Playfair Display', 'Times New Roman', serif;
   --nura-font-body: 'Montserrat', 'Helvetica Neue', sans-serif;
 }
 
