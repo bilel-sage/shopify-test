@@ -44,3 +44,13 @@
   </table>
   <p class="nura-modal__note">Les mesures sont prises à plat. Une variation de 1 à 2 cm est possible selon le tissu.</p>
 </dialog>
+
+<script>
+  document.addEventListener('click', function(e) {
+    var link = e.target.closest('a[href="#nura-size-guide"]');
+    if (link) {
+      e.preventDefault();
+      document.getElementById('nura-size-guide-modal').showModal();
+    }
+  });
+</script>

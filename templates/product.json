@@ -187,7 +187,7 @@
               "type": "text",
               "name": "Guide des tailles",
               "settings": {
-                "text": "<button type=\"button\" class=\"nura-size-guide-link\" onclick=\"document.getElementById('nura-size-guide-modal').showModal()\">Guide des tailles</button>",
+                "text": "<p><a href=\"#nura-size-guide\">Guide des tailles</a></p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",

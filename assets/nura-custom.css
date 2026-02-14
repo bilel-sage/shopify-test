@@ -497,7 +497,7 @@ html {
 }
 
 /* Size guide link */
-.nura-size-guide-link {
+a[href="#nura-size-guide"] {
   display: inline-block;
   font-family: var(--nura-font-body);
   font-size: 0.75rem;
@@ -507,14 +507,11 @@ html {
   text-decoration: underline;
   text-underline-offset: 3px;
   color: var(--nura-noir);
-  background: none;
-  border: none;
   cursor: pointer;
-  padding: 0;
   transition: opacity 0.3s ease;
 }
 
-.nura-size-guide-link:hover {
+a[href="#nura-size-guide"]:hover {
   opacity: 0.6;
 }
 
