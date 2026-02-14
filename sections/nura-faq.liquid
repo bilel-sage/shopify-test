@@ -1,0 +1,25 @@
+<div class="nura-faq">
+  <h2 class="nura-faq__title">Questions fréquentes</h2>
+  {% for block in section.blocks %}
+    {% render block %}
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "NŪRA FAQ",
+  "tag": "section",
+  "class": "nura-faq-section",
+  "blocks": [
+    {
+      "type": "accordion"
+    }
+  ],
+  "presets": [
+    {
+      "name": "NŪRA FAQ",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}

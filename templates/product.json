@@ -17,16 +17,16 @@
           "settings": {
             "media_presentation": "grid",
             "media_columns": "two",
-            "image_gap": 4,
+            "image_gap": 8,
             "large_first_image": false,
             "icons_style": "none",
             "slideshow_controls_style": "counter",
             "slideshow_mobile_controls_style": "dots",
             "thumbnail_position": "right",
             "thumbnail_width": 44,
-            "aspect_ratio": "adapt",
-            "constrain_to_viewport": true,
-            "media_fit": "contain",
+            "aspect_ratio": "0.8",
+            "constrain_to_viewport": false,
+            "media_fit": "cover",
             "media_radius": 0,
             "extend_media": false,
             "zoom": true,
@@ -174,8 +174,34 @@
               "type": "variant-picker",
               "settings": {
                 "variant_style": "buttons",
-                "show_swatches": false,
+                "show_swatches": true,
                 "alignment": "left",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_size_guide": {
+              "type": "text",
+              "name": "Guide des tailles",
+              "settings": {
+                "text": "<button type=\"button\" class=\"nura-size-guide-link\" onclick=\"document.getElementById('nura-size-guide-modal').showModal()\">Guide des tailles</button>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -217,6 +243,32 @@
               },
               "block_order": []
             },
+            "text_shipping": {
+              "type": "text",
+              "name": "Livraison",
+              "settings": {
+                "text": "<p class=\"nura-shipping-message\">Livraison offerte dès 150€</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "text_aEtTtq": {
               "type": "text",
               "name": "Product description",
@@ -248,7 +300,9 @@
             "group_icgrde",
             "divider_VJhene",
             "variant_picker_R3rGDr",
+            "text_size_guide",
             "buy_buttons_eYQEYi",
+            "text_shipping",
             "text_aEtTtq"
           ]
         }
@@ -262,70 +316,6 @@
         "color_scheme": "scheme-1",
         "padding-block-start": 0,
         "padding-block-end": 0
-      }
-    },
-    "nura_trust_bar": {
-      "type": "nura-trust-bar",
-      "blocks": {
-        "badge_1": {
-          "type": "badge",
-          "settings": {
-            "icon": "✦",
-            "text": "Confectionné en Europe"
-          }
-        },
-        "badge_2": {
-          "type": "badge",
-          "settings": {
-            "icon": "❋",
-            "text": "Lin certifié"
-          }
-        },
-        "badge_3": {
-          "type": "badge",
-          "settings": {
-            "icon": "◆",
-            "text": "Éditions limitées"
-          }
-        },
-        "badge_4": {
-          "type": "badge",
-          "settings": {
-            "icon": "✧",
-            "text": "Livraison offerte"
-          }
-        }
-      },
-      "block_order": [
-        "badge_1",
-        "badge_2",
-        "badge_3",
-        "badge_4"
-      ],
-      "settings": {}
-    },
-    "nura_product_story": {
-      "type": "nura-product-story",
-      "settings": {
-        "eyebrow": "L'Art du Détail",
-        "heading": "Une pièce pensée pour durer",
-        "text": "<p>Chaque création NŪRA naît d'une conviction : la mode modest mérite l'excellence. Du choix du lin européen certifié jusqu'aux finitions cousues main, chaque étape reflète notre engagement envers une élégance intemporelle.</p><p>Nous créons pour les femmes qui refusent de choisir entre pudeur et raffinement — parce que l'une ne devrait jamais exclure l'autre.</p>",
-        "signature": "— L'Atelier NŪRA"
-      }
-    },
-    "nura_product_extras": {
-      "type": "nura-product-extras",
-      "settings": {
-        "sensory_eyebrow": "L'Expérience NŪRA",
-        "sensory_heading": "Toucher le raffinement",
-        "sensory_text": "<p>Un lin européen d'exception, sélectionné pour sa douceur et sa tenue. Chaque fibre raconte une histoire de savoir-faire artisanal et d'exigence absolue. Au porté, la matière épouse le mouvement avec une fluidité naturelle.</p>",
-        "quote": "La première marque qui comprend vraiment ce que signifie allier pudeur et haute couture. Chaque détail respire l'élégance.",
-        "quote_author": "— Amira K., Paris",
-        "cta_eyebrow": "Édition Limitée",
-        "cta_heading": "Ne laissez pas passer cette pièce",
-        "cta_text": "Nos créations sont produites en séries limitées. Une fois épuisée, chaque pièce devient unique à jamais.",
-        "cta_button_text": "Ajouter au panier",
-        "cta_urgency": "✦ Production limitée — Quelques pièces restantes"
       }
     },
     "product_recommendations_qggXJq": {
@@ -468,13 +458,122 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "nura_faq": {
+      "type": "nura-faq",
+      "blocks": {
+        "faq_composition": {
+          "type": "accordion",
+          "settings": {
+            "icon": "plus",
+            "dividers": true,
+            "type_preset": "h6",
+            "inherit_color_scheme": true,
+            "color_scheme": "scheme-1",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "row_composition": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Quelle est la composition du tissu ?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_composition": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Nos pièces sont confectionnées en lin européen certifié, reconnu pour sa douceur, sa respirabilité et sa durabilité. Chaque tissu est sélectionné avec soin pour garantir un confort optimal au quotidien.</p>",
+                    "width": "100%"
+                  }
+                }
+              },
+              "block_order": ["text_composition"]
+            },
+            "row_livraison": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Quels sont les délais de livraison ?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_livraison": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Les commandes sont expédiées sous 2 à 4 jours ouvrés. La livraison standard en France métropolitaine prend 3 à 5 jours. La livraison est offerte dès 150€ d'achat.</p>",
+                    "width": "100%"
+                  }
+                }
+              },
+              "block_order": ["text_livraison"]
+            },
+            "row_retours": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Quelle est votre politique de retours ?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_retours": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Vous disposez de 14 jours après réception pour retourner votre article. Les pièces doivent être retournées dans leur état d'origine, non portées et avec les étiquettes. Les frais de retour sont à la charge du client.</p>",
+                    "width": "100%"
+                  }
+                }
+              },
+              "block_order": ["text_retours"]
+            },
+            "row_entretien": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Comment entretenir ma pièce ?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_entretien": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Nous recommandons un lavage à froid (30°C maximum) sur cycle délicat. Repassez à température moyenne sur l'envers du vêtement. Évitez le sèche-linge pour préserver la qualité du lin.</p>",
+                    "width": "100%"
+                  }
+                }
+              },
+              "block_order": ["text_entretien"]
+            }
+          },
+          "block_order": [
+            "row_composition",
+            "row_livraison",
+            "row_retours",
+            "row_entretien"
+          ]
+        }
+      },
+      "block_order": [
+        "faq_composition"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "main",
-    "nura_trust_bar",
-    "nura_product_story",
-    "nura_product_extras",
-    "product_recommendations_qggXJq"
+    "product_recommendations_qggXJq",
+    "nura_faq"
   ]
 }

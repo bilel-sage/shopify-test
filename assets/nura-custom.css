@@ -364,33 +364,46 @@ html {
 }
 
 /* ============================================
-   Product Page — Premium Styles
+   Product Page — Minimalist Luxe
    ============================================ */
 
-/* Add to Cart button — gold */
-.product-information .button--add-to-cart,
-.product-information [data-add-to-cart] .button,
-.product-information .buy-buttons .button:first-child {
-  background: var(--nura-gold) !important;
-  color: var(--nura-noir) !important;
-  border: 2px solid var(--nura-gold) !important;
-  font-family: var(--nura-font-body);
-  font-weight: 500;
-  letter-spacing: 0.12em;
+/* Media gallery */
+.product-information .media-gallery,
+.product-information [class*="media-gallery"] {
+  background: #f5f5f5;
+}
+
+.product-information .media-gallery img,
+.product-information [class*="media-gallery"] img {
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.product-information .media-gallery figure,
+.product-information [class*="media-gallery"] figure {
+  overflow: hidden;
+}
+
+.product-information .media-gallery img:hover,
+.product-information [class*="media-gallery"] img:hover {
+  transform: scale(1.04);
+}
+
+/* Product title */
+.product-information h1 {
+  font-family: var(--nura-font-heading);
+  font-weight: 400;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  font-size: 0.85rem;
-  transition: all 0.35s ease;
 }
 
-.product-information .button--add-to-cart:hover,
-.product-information [data-add-to-cart] .button:hover,
-.product-information .buy-buttons .button:first-child:hover {
-  background: var(--nura-noir) !important;
-  color: var(--nura-gold) !important;
-  border-color: var(--nura-gold) !important;
+/* Product price */
+.product-information .price {
+  font-family: var(--nura-font-body);
+  font-weight: 300;
+  letter-spacing: 0.08em;
 }
 
-/* Product description typography */
+/* Product description */
 .product-information .rte,
 .product-information [class*="product-details"] .rte {
   font-family: var(--nura-font-body);
@@ -401,67 +414,244 @@ html {
   opacity: 0.85;
 }
 
-/* Variant picker — gold borders */
+/* Variant picker — size buttons (square, black border) */
 .product-information fieldset .variant-button,
 .product-information .variant-picker .button--variant,
 .product-information fieldset button[type="button"] {
-  border: 1px solid var(--nura-gold) !important;
+  border: 1px solid #000 !important;
+  border-radius: 0 !important;
   font-family: var(--nura-font-body);
   font-weight: 400;
   letter-spacing: 0.05em;
+  min-width: 44px;
+  min-height: 44px;
   transition: all 0.3s ease;
 }
 
 .product-information fieldset .variant-button:hover,
 .product-information .variant-picker .button--variant:hover,
 .product-information fieldset button[type="button"]:hover {
-  background: var(--nura-gold) !important;
-  color: var(--nura-noir) !important;
+  background: #000 !important;
+  color: #fff !important;
 }
 
 .product-information fieldset .variant-button[aria-checked="true"],
 .product-information fieldset .variant-button.is-active,
 .product-information fieldset button[type="button"][aria-checked="true"] {
-  background: var(--nura-gold) !important;
-  color: var(--nura-noir) !important;
-  border-color: var(--nura-gold) !important;
+  background: #000 !important;
+  color: #fff !important;
+  border-color: #000 !important;
 }
 
-/* Sticky bar — refined gold border */
-.product-sticky-bar,
-[class*="sticky-bar"],
-.sticky-add-to-cart {
-  border-top: 1px solid var(--nura-gold) !important;
-  backdrop-filter: blur(12px);
+/* Color swatches */
+.product-information .swatch {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid transparent !important;
+  transition: border-color 0.3s ease;
 }
 
-/* Media gallery — subtle hover zoom */
-.product-information .media-gallery img,
-.product-information [class*="media-gallery"] img {
-  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+.product-information .swatch[aria-checked="true"],
+.product-information .swatch.is-active {
+  border-color: #000 !important;
 }
 
-.product-information .media-gallery img:hover,
-.product-information [class*="media-gallery"] img:hover {
-  transform: scale(1.03);
-}
-
-/* Product title refinement */
-.product-information h1 {
-  font-family: var(--nura-font-heading);
-  letter-spacing: -0.01em;
-}
-
-/* Product price */
-.product-information .price {
+/* Add to Cart button — black, full width */
+.product-information .button--add-to-cart,
+.product-information [data-add-to-cart] .button,
+.product-information .buy-buttons .button:first-child {
+  background: #000 !important;
+  color: #fff !important;
+  border: 2px solid #000 !important;
+  border-radius: 0 !important;
   font-family: var(--nura-font-body);
-  font-weight: 400;
-  letter-spacing: 0.05em;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  width: 100%;
+  transition: all 0.35s ease;
 }
 
-@media (max-width: 768px) {
+.product-information .button--add-to-cart:hover,
+.product-information [data-add-to-cart] .button:hover,
+.product-information .buy-buttons .button:first-child:hover {
+  background: #fff !important;
+  color: #000 !important;
+  border-color: #000 !important;
+}
+
+/* Hide accelerated checkout buttons and quantity selector */
+.product-information .shopify-payment-button,
+.product-information [data-shopify="dynamic-checkout"],
+.product-information .buy-buttons .button--secondary,
+.product-information .buy-buttons [class*="payment-button"] {
+  display: none !important;
+}
+
+.product-information [class*="quantity"],
+.product-information .quantity-selector,
+.product-information quantity-input {
+  display: none !important;
+}
+
+/* Size guide link */
+.nura-size-guide-link {
+  display: inline-block;
+  font-family: var(--nura-font-body);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: var(--nura-noir);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.3s ease;
+}
+
+.nura-size-guide-link:hover {
+  opacity: 0.6;
+}
+
+/* Shipping message */
+.nura-shipping-message {
+  text-align: center;
+  font-family: var(--nura-font-body);
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  color: #888;
+  margin: 0;
+}
+
+/* ============================================
+   Size Guide Modal (native <dialog>)
+   ============================================ */
+#nura-size-guide-modal {
+  border: none;
+  border-radius: 0;
+  padding: 48px;
+  max-width: 560px;
+  width: 90vw;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
+  font-family: var(--nura-font-body);
+}
+
+#nura-size-guide-modal::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.nura-modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--nura-noir);
+  line-height: 1;
+  padding: 4px;
+}
+
+.nura-modal__close:hover {
+  opacity: 0.5;
+}
+
+.nura-modal__title {
+  font-family: var(--nura-font-heading);
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 32px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.nura-modal__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+}
+
+.nura-modal__table th {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  padding: 12px 8px;
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+
+.nura-modal__table td {
+  padding: 12px 8px;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.nura-modal__note {
+  font-size: 0.7rem;
+  color: #888;
+  text-align: center;
+  margin-top: 24px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* ============================================
+   FAQ Section
+   ============================================ */
+.nura-faq {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 60px 24px 80px;
+}
+
+.nura-faq__title {
+  font-family: var(--nura-font-heading);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: var(--nura-noir);
+}
+
+/* ============================================
+   Responsive — Product Page
+   ============================================ */
+@media (max-width: 749px) {
   .product-information .buy-buttons .button:first-child {
     font-size: 0.8rem;
     letter-spacing: 0.1em;
+  }
+
+  #nura-size-guide-modal {
+    padding: 32px 24px;
+    width: 95vw;
+  }
+
+  .nura-faq {
+    padding: 40px 16px 60px;
+  }
+}
+
+@media (max-width: 390px) {
+  .nura-modal__table {
+    font-size: 0.75rem;
+  }
+
+  .nura-modal__table th,
+  .nura-modal__table td {
+    padding: 10px 4px;
   }
 }
