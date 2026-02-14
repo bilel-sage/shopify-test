@@ -518,8 +518,8 @@ html {
   opacity: 0.6;
 }
 
-/* Shipping message */
-.nura-shipping-message {
+/* Shipping message — targets the block by its ID in product-details */
+[id*="text_shipping"] p {
   text-align: center;
   font-family: var(--nura-font-body);
   font-size: 0.75rem;

@@ -247,7 +247,7 @@
               "type": "text",
               "name": "Livraison",
               "settings": {
-                "text": "<p class=\"nura-shipping-message\">Livraison offerte dès 150€</p>",
+                "text": "<p>Livraison offerte dès 150€</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
