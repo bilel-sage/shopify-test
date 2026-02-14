@@ -137,7 +137,7 @@
         "trust_1": {
           "type": "text",
           "settings": {
-            "text": "Confectionn\u00e9 en Europe",
+            "text": "<p>Confectionn\u00e9 en Europe</p>",
             "type_preset": "custom",
             "font": "var(--font-body--family)",
             "font_size": "0.8rem",
@@ -151,7 +151,7 @@
         "divider_1": {
           "type": "text",
           "settings": {
-            "text": "\u00b7",
+            "text": "<p>\u00b7</p>",
             "type_preset": "custom",
             "font": "var(--font-body--family)",
             "font_size": "0.8rem",
@@ -165,7 +165,7 @@
         "trust_2": {
           "type": "text",
           "settings": {
-            "text": "Lin fran\u00e7ais certifi\u00e9",
+            "text": "<p>Lin fran\u00e7ais certifi\u00e9</p>",
             "type_preset": "custom",
             "font": "var(--font-body--family)",
             "font_size": "0.8rem",
@@ -179,7 +179,7 @@
         "divider_2": {
           "type": "text",
           "settings": {
-            "text": "\u00b7",
+            "text": "<p>\u00b7</p>",
             "type_preset": "custom",
             "font": "var(--font-body--family)",
             "font_size": "0.8rem",
@@ -193,7 +193,7 @@
         "trust_3": {
           "type": "text",
           "settings": {
-            "text": "\u00c9ditions limit\u00e9es",
+            "text": "<p>\u00c9ditions limit\u00e9es</p>",
             "type_preset": "custom",
             "font": "var(--font-body--family)",
             "font_size": "0.8rem",
@@ -207,7 +207,7 @@
         "divider_3": {
           "type": "text",
           "settings": {
-            "text": "\u00b7",
+            "text": "<p>\u00b7</p>",
             "type_preset": "custom",
             "font": "var(--font-body--family)",
             "font_size": "0.8rem",
@@ -221,7 +221,7 @@
         "trust_4": {
           "type": "text",
           "settings": {
-            "text": "Livraison offerte d\u00e8s 150\u20ac",
+            "text": "<p>Livraison offerte d\u00e8s 150\u20ac</p>",
             "type_preset": "custom",
             "font": "var(--font-body--family)",
             "font_size": "0.8rem",
