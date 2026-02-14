@@ -264,6 +264,70 @@
         "padding-block-end": 0
       }
     },
+    "nura_trust_bar": {
+      "type": "nura-trust-bar",
+      "blocks": {
+        "badge_1": {
+          "type": "badge",
+          "settings": {
+            "icon": "✦",
+            "text": "Confectionné en Europe"
+          }
+        },
+        "badge_2": {
+          "type": "badge",
+          "settings": {
+            "icon": "❋",
+            "text": "Lin certifié"
+          }
+        },
+        "badge_3": {
+          "type": "badge",
+          "settings": {
+            "icon": "◆",
+            "text": "Éditions limitées"
+          }
+        },
+        "badge_4": {
+          "type": "badge",
+          "settings": {
+            "icon": "✧",
+            "text": "Livraison offerte"
+          }
+        }
+      },
+      "block_order": [
+        "badge_1",
+        "badge_2",
+        "badge_3",
+        "badge_4"
+      ],
+      "settings": {}
+    },
+    "nura_product_story": {
+      "type": "nura-product-story",
+      "settings": {
+        "eyebrow": "L'Art du Détail",
+        "heading": "Une pièce pensée pour durer",
+        "text": "<p>Chaque création NŪRA naît d'une conviction : la mode modest mérite l'excellence. Du choix du lin européen certifié jusqu'aux finitions cousues main, chaque étape reflète notre engagement envers une élégance intemporelle.</p><p>Nous créons pour les femmes qui refusent de choisir entre pudeur et raffinement — parce que l'une ne devrait jamais exclure l'autre.</p>",
+        "signature": "— L'Atelier NŪRA"
+      }
+    },
+    "nura_product_extras": {
+      "type": "nura-product-extras",
+      "settings": {
+        "sensory_eyebrow": "L'Expérience NŪRA",
+        "sensory_heading": "Toucher le raffinement",
+        "sensory_text": "<p>Un lin européen d'exception, sélectionné pour sa douceur et sa tenue. Chaque fibre raconte une histoire de savoir-faire artisanal et d'exigence absolue. Au porté, la matière épouse le mouvement avec une fluidité naturelle.</p>",
+        "quote": "La première marque qui comprend vraiment ce que signifie allier pudeur et haute couture. Chaque détail respire l'élégance.",
+        "quote_author": "— Amira K., Paris",
+        "cta_eyebrow": "Édition Limitée",
+        "cta_heading": "Ne laissez pas passer cette pièce",
+        "cta_text": "Nos créations sont produites en séries limitées. Une fois épuisée, chaque pièce devient unique à jamais.",
+        "cta_button_text": "Ajouter au panier",
+        "cta_urgency": "✦ Production limitée — Quelques pièces restantes"
+      }
+    },
     "product_recommendations_qggXJq": {
       "type": "product-recommendations",
       "blocks": {
@@ -408,6 +472,9 @@
   },
   "order": [
     "main",
+    "nura_trust_bar",
+    "nura_product_story",
+    "nura_product_extras",
     "product_recommendations_qggXJq"
   ]
 }

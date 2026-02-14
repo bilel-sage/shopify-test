@@ -362,3 +362,106 @@ html {
 .nura-rarete a:hover {
   opacity: 0.7;
 }
+
+/* ============================================
+   Product Page — Premium Styles
+   ============================================ */
+
+/* Add to Cart button — gold */
+.product-information .button--add-to-cart,
+.product-information [data-add-to-cart] .button,
+.product-information .buy-buttons .button:first-child {
+  background: var(--nura-gold) !important;
+  color: var(--nura-noir) !important;
+  border: 2px solid var(--nura-gold) !important;
+  font-family: var(--nura-font-body);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  transition: all 0.35s ease;
+}
+
+.product-information .button--add-to-cart:hover,
+.product-information [data-add-to-cart] .button:hover,
+.product-information .buy-buttons .button:first-child:hover {
+  background: var(--nura-noir) !important;
+  color: var(--nura-gold) !important;
+  border-color: var(--nura-gold) !important;
+}
+
+/* Product description typography */
+.product-information .rte,
+.product-information [class*="product-details"] .rte {
+  font-family: var(--nura-font-body);
+  font-weight: 300;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--nura-noir);
+  opacity: 0.85;
+}
+
+/* Variant picker — gold borders */
+.product-information fieldset .variant-button,
+.product-information .variant-picker .button--variant,
+.product-information fieldset button[type="button"] {
+  border: 1px solid var(--nura-gold) !important;
+  font-family: var(--nura-font-body);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+}
+
+.product-information fieldset .variant-button:hover,
+.product-information .variant-picker .button--variant:hover,
+.product-information fieldset button[type="button"]:hover {
+  background: var(--nura-gold) !important;
+  color: var(--nura-noir) !important;
+}
+
+.product-information fieldset .variant-button[aria-checked="true"],
+.product-information fieldset .variant-button.is-active,
+.product-information fieldset button[type="button"][aria-checked="true"] {
+  background: var(--nura-gold) !important;
+  color: var(--nura-noir) !important;
+  border-color: var(--nura-gold) !important;
+}
+
+/* Sticky bar — refined gold border */
+.product-sticky-bar,
+[class*="sticky-bar"],
+.sticky-add-to-cart {
+  border-top: 1px solid var(--nura-gold) !important;
+  backdrop-filter: blur(12px);
+}
+
+/* Media gallery — subtle hover zoom */
+.product-information .media-gallery img,
+.product-information [class*="media-gallery"] img {
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.product-information .media-gallery img:hover,
+.product-information [class*="media-gallery"] img:hover {
+  transform: scale(1.03);
+}
+
+/* Product title refinement */
+.product-information h1 {
+  font-family: var(--nura-font-heading);
+  letter-spacing: -0.01em;
+}
+
+/* Product price */
+.product-information .price {
+  font-family: var(--nura-font-body);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+  .product-information .buy-buttons .button:first-child {
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+  }
+}

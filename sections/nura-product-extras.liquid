@@ -1,0 +1,377 @@
+{{ 'nura-custom.css' | asset_url | stylesheet_tag }}
+
+<style>
+  /* --- Sensory Experience --- */
+  .nura-sensory {
+    padding: 100px 24px;
+    background: var(--nura-noir);
+    color: var(--nura-cream);
+  }
+
+  .nura-sensory__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .nura-sensory__eyebrow {
+    font-family: var(--nura-font-body);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--nura-gold);
+    margin-bottom: 24px;
+  }
+
+  .nura-sensory__heading {
+    font-family: var(--nura-font-heading);
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    font-weight: 700;
+    color: var(--nura-cream);
+    margin-bottom: 24px;
+    line-height: 1.2;
+  }
+
+  .nura-sensory__text {
+    font-family: var(--nura-font-body);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: var(--nura-cream);
+    opacity: 0.8;
+  }
+
+  .nura-sensory__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* --- Social Proof --- */
+  .nura-social-proof {
+    padding: 80px 24px;
+    background: var(--nura-cream);
+    text-align: center;
+    position: relative;
+  }
+
+  .nura-social-proof__inner {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .nura-social-proof__quote-mark {
+    font-family: var(--nura-font-heading);
+    font-size: 8rem;
+    color: var(--nura-gold);
+    opacity: 0.25;
+    line-height: 1;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .nura-social-proof__quote {
+    font-family: var(--nura-font-heading);
+    font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--nura-noir);
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .nura-social-proof__author {
+    font-family: var(--nura-font-body);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--nura-gold);
+  }
+
+  /* --- Final CTA --- */
+  .nura-final-cta {
+    padding: 80px 24px;
+    text-align: center;
+    background: var(--nura-blanc);
+  }
+
+  .nura-final-cta__inner {
+    max-width: 700px;
+    margin: 0 auto;
+    border: 1px solid var(--nura-gold);
+    padding: 60px 48px;
+  }
+
+  .nura-final-cta__eyebrow {
+    font-family: var(--nura-font-body);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--nura-gold);
+    margin-bottom: 20px;
+  }
+
+  .nura-final-cta__heading {
+    font-family: var(--nura-font-heading);
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-weight: 700;
+    color: var(--nura-noir);
+    margin-bottom: 16px;
+    line-height: 1.2;
+  }
+
+  .nura-final-cta__text {
+    font-family: var(--nura-font-body);
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.7;
+    color: var(--nura-noir);
+    opacity: 0.8;
+    margin-bottom: 32px;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nura-final-cta__button {
+    display: inline-block;
+    font-family: var(--nura-font-body);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--nura-noir);
+    background: var(--nura-gold);
+    padding: 16px 48px;
+    text-decoration: none;
+    border: 2px solid var(--nura-gold);
+    transition: all 0.35s ease;
+    cursor: pointer;
+  }
+
+  .nura-final-cta__button:hover {
+    background: var(--nura-noir);
+    color: var(--nura-gold);
+    border-color: var(--nura-gold);
+  }
+
+  .nura-final-cta__urgency {
+    font-family: var(--nura-font-body);
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--nura-gold);
+    margin-top: 20px;
+    opacity: 0.9;
+  }
+
+  /* --- Responsive --- */
+  @media (max-width: 768px) {
+    .nura-sensory {
+      padding: 60px 24px;
+    }
+
+    .nura-sensory__grid {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    .nura-social-proof {
+      padding: 60px 24px;
+    }
+
+    .nura-social-proof__quote-mark {
+      font-size: 5rem;
+      top: -24px;
+    }
+
+    .nura-final-cta {
+      padding: 60px 16px;
+    }
+
+    .nura-final-cta__inner {
+      padding: 40px 24px;
+    }
+  }
+
+  @media (max-width: 390px) {
+    .nura-sensory {
+      padding: 48px 16px;
+    }
+
+    .nura-social-proof {
+      padding: 48px 16px;
+    }
+
+    .nura-final-cta__inner {
+      padding: 32px 16px;
+    }
+  }
+</style>
+
+{%- comment -%} === SENSORY EXPERIENCE === {%- endcomment -%}
+<section class="nura-sensory">
+  <div class="nura-sensory__grid">
+    <div class="nura-sensory__content">
+      {%- if section.settings.sensory_eyebrow != blank -%}
+        <p class="nura-sensory__eyebrow">{{ section.settings.sensory_eyebrow }}</p>
+      {%- endif -%}
+      {%- if section.settings.sensory_heading != blank -%}
+        <h2 class="nura-sensory__heading">{{ section.settings.sensory_heading }}</h2>
+      {%- endif -%}
+      {%- if section.settings.sensory_text != blank -%}
+        <div class="nura-sensory__text">{{ section.settings.sensory_text }}</div>
+      {%- endif -%}
+    </div>
+    {%- if section.settings.sensory_image != blank -%}
+      <div class="nura-sensory__image">
+        {{ section.settings.sensory_image | image_url: width: 600 | image_tag: loading: 'lazy' }}
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{%- comment -%} === SOCIAL PROOF === {%- endcomment -%}
+<section class="nura-social-proof">
+  <div class="nura-social-proof__inner">
+    <span class="nura-social-proof__quote-mark">&ldquo;</span>
+    {%- if section.settings.quote != blank -%}
+      <blockquote class="nura-social-proof__quote">{{ section.settings.quote }}</blockquote>
+    {%- endif -%}
+    {%- if section.settings.quote_author != blank -%}
+      <p class="nura-social-proof__author">{{ section.settings.quote_author }}</p>
+    {%- endif -%}
+  </div>
+</section>
+
+{%- comment -%} === FINAL CTA === {%- endcomment -%}
+<section class="nura-final-cta">
+  <div class="nura-final-cta__inner">
+    {%- if section.settings.cta_eyebrow != blank -%}
+      <p class="nura-final-cta__eyebrow">{{ section.settings.cta_eyebrow }}</p>
+    {%- endif -%}
+    {%- if section.settings.cta_heading != blank -%}
+      <h2 class="nura-final-cta__heading">{{ section.settings.cta_heading }}</h2>
+    {%- endif -%}
+    {%- if section.settings.cta_text != blank -%}
+      <p class="nura-final-cta__text">{{ section.settings.cta_text }}</p>
+    {%- endif -%}
+    <a href="{{ section.settings.cta_url | default: '#' }}" class="nura-final-cta__button">
+      {{ section.settings.cta_button_text | default: 'Découvrir' }}
+    </a>
+    {%- if section.settings.cta_urgency != blank -%}
+      <p class="nura-final-cta__urgency">{{ section.settings.cta_urgency }}</p>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "NŪRA Product Extras",
+  "tag": "section",
+  "class": "nura-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Expérience sensorielle"
+    },
+    {
+      "type": "text",
+      "id": "sensory_eyebrow",
+      "label": "Surtitre",
+      "default": "L'Expérience NŪRA"
+    },
+    {
+      "type": "text",
+      "id": "sensory_heading",
+      "label": "Titre",
+      "default": "Toucher le raffinement"
+    },
+    {
+      "type": "richtext",
+      "id": "sensory_text",
+      "label": "Texte",
+      "default": "<p>Un lin européen d'exception, sélectionné pour sa douceur et sa tenue. Chaque fibre raconte une histoire de savoir-faire artisanal et d'exigence absolue. Au porté, la matière épouse le mouvement avec une fluidité naturelle.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "sensory_image",
+      "label": "Image"
+    },
+    {
+      "type": "header",
+      "content": "Preuve sociale"
+    },
+    {
+      "type": "text",
+      "id": "quote",
+      "label": "Citation",
+      "default": "La première marque qui comprend vraiment ce que signifie allier pudeur et haute couture. Chaque détail respire l'élégance."
+    },
+    {
+      "type": "text",
+      "id": "quote_author",
+      "label": "Auteur",
+      "default": "— Amira K., Paris"
+    },
+    {
+      "type": "header",
+      "content": "CTA final"
+    },
+    {
+      "type": "text",
+      "id": "cta_eyebrow",
+      "label": "Surtitre",
+      "default": "Édition Limitée"
+    },
+    {
+      "type": "text",
+      "id": "cta_heading",
+      "label": "Titre",
+      "default": "Ne laissez pas passer cette pièce"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "Texte",
+      "default": "Nos créations sont produites en séries limitées. Une fois épuisée, chaque pièce devient unique à jamais."
+    },
+    {
+      "type": "text",
+      "id": "cta_button_text",
+      "label": "Texte du bouton",
+      "default": "Ajouter au panier"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "Lien du bouton"
+    },
+    {
+      "type": "text",
+      "id": "cta_urgency",
+      "label": "Message d'urgence",
+      "default": "✦ Production limitée — Quelques pièces restantes"
+    }
+  ],
+  "presets": [
+    {
+      "name": "NŪRA Product Extras"
+    }
+  ]
+}
+{% endschema %}

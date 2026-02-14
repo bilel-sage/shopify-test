@@ -1,0 +1,155 @@
+{{ 'nura-custom.css' | asset_url | stylesheet_tag }}
+
+<style>
+  .nura-product-story {
+    padding: 100px 24px;
+    background: var(--nura-cream);
+  }
+
+  .nura-product-story__inner {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .nura-product-story__eyebrow {
+    font-family: var(--nura-font-body);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--nura-gold);
+    margin-bottom: 28px;
+  }
+
+  .nura-product-story__heading {
+    font-family: var(--nura-font-heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: var(--nura-noir);
+    margin-bottom: 28px;
+    line-height: 1.2;
+  }
+
+  .nura-product-story__divider {
+    width: 60px;
+    height: 1px;
+    background: var(--nura-gold);
+    margin: 32px auto;
+  }
+
+  .nura-product-story__text {
+    font-family: var(--nura-font-body);
+    font-size: 1.05rem;
+    font-weight: 300;
+    line-height: 1.9;
+    color: var(--nura-noir);
+    opacity: 0.8;
+    margin-bottom: 20px;
+  }
+
+  .nura-product-story__signature {
+    font-family: var(--nura-font-heading);
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--nura-gold);
+    margin-top: 40px;
+  }
+
+  .nura-product-story__image {
+    margin-top: 48px;
+  }
+
+  .nura-product-story__image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    .nura-product-story {
+      padding: 60px 24px;
+    }
+  }
+
+  @media (max-width: 390px) {
+    .nura-product-story {
+      padding: 48px 16px;
+    }
+
+    .nura-product-story__heading {
+      font-size: 1.8rem;
+    }
+  }
+</style>
+
+<section class="nura-product-story">
+  <div class="nura-product-story__inner">
+    {%- if section.settings.eyebrow != blank -%}
+      <p class="nura-product-story__eyebrow">{{ section.settings.eyebrow }}</p>
+    {%- endif -%}
+
+    {%- if section.settings.heading != blank -%}
+      <h2 class="nura-product-story__heading">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+
+    <div class="nura-product-story__divider"></div>
+
+    {%- if section.settings.text != blank -%}
+      <div class="nura-product-story__text">{{ section.settings.text }}</div>
+    {%- endif -%}
+
+    {%- if section.settings.signature != blank -%}
+      <p class="nura-product-story__signature">{{ section.settings.signature }}</p>
+    {%- endif -%}
+
+    {%- if section.settings.image != blank -%}
+      <div class="nura-product-story__image">
+        {{ section.settings.image | image_url: width: 720 | image_tag: loading: 'lazy' }}
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "NŪRA Product Story",
+  "tag": "section",
+  "class": "nura-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Surtitre",
+      "default": "L'Art du Détail"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titre",
+      "default": "Une pièce pensée pour durer"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Texte narratif",
+      "default": "<p>Chaque création NŪRA naît d'une conviction : la mode modest mérite l'excellence. Du choix du lin européen certifié jusqu'aux finitions cousues main, chaque étape reflète notre engagement envers une élégance intemporelle.</p><p>Nous créons pour les femmes qui refusent de choisir entre pudeur et raffinement — parce que l'une ne devrait jamais exclure l'autre.</p>"
+    },
+    {
+      "type": "text",
+      "id": "signature",
+      "label": "Signature",
+      "default": "— L'Atelier NŪRA"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image (optionnelle)"
+    }
+  ],
+  "presets": [
+    {
+      "name": "NŪRA Product Story"
+    }
+  ]
+}
+{% endschema %}
