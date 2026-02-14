@@ -1,0 +1,364 @@
+/* ============================================
+   NŪRA — Custom Brand Styles
+   Premium Muslim Fashion
+   ============================================ */
+
+/* Google Fonts fallback */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+
+/* ============================================
+   CSS Custom Properties
+   ============================================ */
+:root {
+  --nura-gold: #C9A96E;
+  --nura-gold-dark: #B8944F;
+  --nura-noir: #1A1A1A;
+  --nura-blanc: #FAF7F2;
+  --nura-sable: #E8DED1;
+  --nura-warm: #D4B896;
+  --nura-cream: #F5F0E8;
+  --nura-font-heading: 'Cormorant Garamond', 'Times New Roman', serif;
+  --nura-font-body: 'Montserrat', 'Helvetica Neue', sans-serif;
+}
+
+/* ============================================
+   L'Excellence NŪRA — 3-Column Feature
+   ============================================ */
+.nura-excellence {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.nura-excellence__title {
+  font-family: var(--nura-font-heading);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  color: var(--nura-noir);
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+
+.nura-excellence__subtitle {
+  font-family: var(--nura-font-body);
+  font-size: 1rem;
+  color: var(--nura-noir);
+  opacity: 0.7;
+  margin-bottom: 60px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nura-excellence__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.nura-excellence__item {
+  text-align: center;
+  padding: 40px 24px;
+  transition: transform 0.4s ease;
+}
+
+.nura-excellence__item:hover {
+  transform: translateY(-4px);
+}
+
+.nura-excellence__icon {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  display: block;
+  color: var(--nura-gold);
+}
+
+.nura-excellence__item-title {
+  font-family: var(--nura-font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--nura-noir);
+  margin-bottom: 16px;
+}
+
+.nura-excellence__item-text {
+  font-family: var(--nura-font-body);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--nura-noir);
+  opacity: 0.75;
+}
+
+.nura-excellence__divider {
+  width: 40px;
+  height: 1px;
+  background: var(--nura-gold);
+  margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+  .nura-excellence__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .nura-excellence {
+    padding: 60px 0;
+  }
+}
+
+/* ============================================
+   Storytelling / Manifeste Section
+   ============================================ */
+.nura-story {
+  padding: 100px 24px;
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.nura-story__eyebrow {
+  font-family: var(--nura-font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--nura-gold);
+  margin-bottom: 32px;
+}
+
+.nura-story__heading {
+  font-family: var(--nura-font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--nura-noir);
+  margin-bottom: 32px;
+  line-height: 1.2;
+}
+
+.nura-story__text {
+  font-family: var(--nura-font-body);
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--nura-noir);
+  opacity: 0.8;
+  margin-bottom: 24px;
+}
+
+.nura-story__signature {
+  font-family: var(--nura-font-heading);
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--nura-gold);
+  margin-top: 40px;
+}
+
+.nura-story__divider {
+  width: 60px;
+  height: 1px;
+  background: var(--nura-gold);
+  margin: 40px auto;
+}
+
+@media (max-width: 768px) {
+  .nura-story {
+    padding: 60px 24px;
+  }
+}
+
+/* ============================================
+   Rareté — Limited Editions Section
+   ============================================ */
+.nura-rarete {
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.nura-rarete__inner {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid var(--nura-gold);
+  padding: 60px 48px;
+}
+
+.nura-rarete__eyebrow {
+  font-family: var(--nura-font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--nura-gold);
+  margin-bottom: 24px;
+}
+
+.nura-rarete__heading {
+  font-family: var(--nura-font-heading);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 700;
+  color: var(--nura-noir);
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.nura-rarete__text {
+  font-family: var(--nura-font-body);
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--nura-noir);
+  opacity: 0.8;
+  margin-bottom: 36px;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nura-rarete__cta {
+  display: inline-block;
+  font-family: var(--nura-font-body);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--nura-noir);
+  background: var(--nura-gold);
+  padding: 16px 48px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nura-rarete__cta:hover {
+  background: var(--nura-noir);
+  color: var(--nura-gold);
+}
+
+@media (max-width: 768px) {
+  .nura-rarete__inner {
+    padding: 40px 24px;
+  }
+
+  .nura-rarete {
+    padding: 60px 16px;
+  }
+}
+
+/* ============================================
+   Newsletter Section
+   ============================================ */
+.nura-newsletter {
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.nura-newsletter__eyebrow {
+  font-family: var(--nura-font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--nura-gold);
+  margin-bottom: 24px;
+}
+
+.nura-newsletter__heading {
+  font-family: var(--nura-font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.nura-newsletter__text {
+  font-family: var(--nura-font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #ffffffcc;
+  margin-bottom: 40px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nura-newsletter__form {
+  display: flex;
+  max-width: 480px;
+  margin: 0 auto;
+  gap: 0;
+}
+
+.nura-newsletter__input {
+  flex: 1;
+  padding: 16px 20px;
+  border: 1px solid #ffffff30;
+  background: transparent;
+  color: #ffffff;
+  font-family: var(--nura-font-body);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.nura-newsletter__input::placeholder {
+  color: #ffffff60;
+}
+
+.nura-newsletter__input:focus {
+  border-color: var(--nura-gold);
+}
+
+.nura-newsletter__button {
+  padding: 16px 32px;
+  background: var(--nura-gold);
+  color: var(--nura-noir);
+  border: 1px solid var(--nura-gold);
+  font-family: var(--nura-font-body);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nura-newsletter__button:hover {
+  background: #ffffff;
+  border-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .nura-newsletter__form {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nura-newsletter {
+    padding: 60px 24px;
+  }
+}
+
+/* ============================================
+   Global Refinements
+   ============================================ */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Gold underline on links in custom sections */
+.nura-excellence a,
+.nura-story a,
+.nura-rarete a {
+  color: var(--nura-gold);
+  text-decoration: none;
+  border-bottom: 1px solid var(--nura-gold);
+  transition: opacity 0.3s ease;
+}
+
+.nura-excellence a:hover,
+.nura-story a:hover,
+.nura-rarete a:hover {
+  opacity: 0.7;
+}

@@ -8,23 +8,23 @@
  * ------------------------------------------------------------
  */{
   "sections": {
-    "hero_jVaWmY": {
+    "hero_nura": {
       "type": "hero",
       "blocks": {
-        "text_YLPk4p": {
+        "text_heading": {
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p>Browse our latest products</p>",
+            "text": "<h1>Wear Your Light.</h1>",
             "width": "fit-content",
             "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h2",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
+            "alignment": "center",
+            "type_preset": "h1",
+            "font": "var(--font-heading--family)",
+            "font_size": "",
+            "line_height": "tight",
+            "letter_spacing": "tight",
+            "case": "uppercase",
             "wrap": "pretty",
             "color": "var(--color-foreground-heading)",
             "background": false,
@@ -37,12 +37,53 @@
           },
           "blocks": {}
         },
-        "button_H9gpTf": {
+        "text_subtitle": {
+          "type": "text",
+          "name": "Subtitle",
+          "settings": {
+            "text": "<p>Mode pudique d'exception \u2014 Confectionn\u00e9e en Europe, pens\u00e9e pour durer.</p>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "paragraph",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 8,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "button_primary": {
           "type": "button",
           "name": "t:names.button",
           "settings": {
-            "label": "Shop all",
+            "label": "D\u00e9couvrir la collection",
             "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        },
+        "button_secondary": {
+          "type": "button",
+          "name": "Secondary CTA",
+          "settings": {
+            "label": "Notre histoire",
+            "link": "/pages/about",
             "open_in_new_tab": false,
             "style_class": "button-secondary",
             "width": "fit-content",
@@ -54,8 +95,10 @@
         }
       },
       "block_order": [
-        "text_YLPk4p",
-        "button_H9gpTf"
+        "text_heading",
+        "text_subtitle",
+        "button_primary",
+        "button_secondary"
       ],
       "name": "t:names.hero",
       "settings": {
@@ -68,27 +111,147 @@
         "open_in_new_tab": false,
         "content_direction": "column",
         "vertical_on_mobile": true,
-        "horizontal_alignment": "space-between",
-        "vertical_alignment": "flex-end",
-        "align_baseline": true,
+        "horizontal_alignment": "center",
+        "vertical_alignment": "center",
+        "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "flex-end",
-        "gap": 24,
-        "section_width": "page-width",
-        "section_height": "medium",
-        "section_height_custom": 50,
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "full-width",
+        "section_height": "large",
+        "section_height_custom": 70,
         "color_scheme": "scheme-6",
         "toggle_overlay": true,
-        "overlay_color": "#12121266",
+        "overlay_color": "#1A1A1A50",
         "overlay_style": "solid",
         "gradient_direction": "to bottom",
         "blurred_reflection": false,
         "reflection_opacity": 75,
         "padding-block-start": 100,
-        "padding-block-end": 72
+        "padding-block-end": 100
       }
     },
-    "product_list_fa6P9H": {
+    "marquee_nura": {
+      "type": "marquee",
+      "blocks": {
+        "trust_1": {
+          "type": "text",
+          "settings": {
+            "text": "Confectionn\u00e9 en Europe",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "0.8rem",
+            "line_height": "tight",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "nowrap",
+            "width": "fit-content"
+          }
+        },
+        "divider_1": {
+          "type": "text",
+          "settings": {
+            "text": "\u00b7",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "0.8rem",
+            "line_height": "tight",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "nowrap",
+            "width": "fit-content"
+          }
+        },
+        "trust_2": {
+          "type": "text",
+          "settings": {
+            "text": "Lin fran\u00e7ais certifi\u00e9",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "0.8rem",
+            "line_height": "tight",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "nowrap",
+            "width": "fit-content"
+          }
+        },
+        "divider_2": {
+          "type": "text",
+          "settings": {
+            "text": "\u00b7",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "0.8rem",
+            "line_height": "tight",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "nowrap",
+            "width": "fit-content"
+          }
+        },
+        "trust_3": {
+          "type": "text",
+          "settings": {
+            "text": "\u00c9ditions limit\u00e9es",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "0.8rem",
+            "line_height": "tight",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "nowrap",
+            "width": "fit-content"
+          }
+        },
+        "divider_3": {
+          "type": "text",
+          "settings": {
+            "text": "\u00b7",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "0.8rem",
+            "line_height": "tight",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "nowrap",
+            "width": "fit-content"
+          }
+        },
+        "trust_4": {
+          "type": "text",
+          "settings": {
+            "text": "Livraison offerte d\u00e8s 150\u20ac",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "0.8rem",
+            "line_height": "tight",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "nowrap",
+            "width": "fit-content"
+          }
+        }
+      },
+      "block_order": [
+        "trust_1",
+        "divider_1",
+        "trust_2",
+        "divider_2",
+        "trust_3",
+        "divider_3",
+        "trust_4"
+      ],
+      "name": "t:names.marquee",
+      "settings": {
+        "movement_direction": "normal",
+        "color_scheme": "scheme-2",
+        "padding-block-start": 16,
+        "padding-block-end": 16,
+        "gap_between_elements": 40
+      }
+    },
+    "product_list_nura": {
       "type": "product-list",
       "blocks": {
         "static-header": {
@@ -125,22 +288,22 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "product_list_text_YFtzcL": {
+            "collection_title": {
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "text": "<h2>La Collection Aube</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h4",
-                "font": "var(--font-body--family)",
+                "type_preset": "h3",
+                "font": "var(--font-heading--family)",
                 "font_size": "",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "color": "var(--color-foreground)",
+                "color": "var(--color-foreground-heading)",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -151,11 +314,11 @@
               },
               "blocks": {}
             },
-            "product_list_button_MWeP9V": {
+            "view_all_button": {
               "type": "_product-list-button",
               "name": "t:names.product_list_button",
               "settings": {
-                "label": "View all",
+                "label": "Voir tout",
                 "open_in_new_tab": false,
                 "style_class": "link",
                 "width": "fit-content",
@@ -167,8 +330,8 @@
             }
           },
           "block_order": [
-            "product_list_text_YFtzcL",
-            "product_list_button_MWeP9V"
+            "collection_title",
+            "view_all_button"
           ]
         },
         "static-product-card": {
@@ -189,7 +352,7 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "product_card_gallery_677WP3": {
+            "product_gallery": {
               "type": "_product-card-gallery",
               "name": "t:names.product_card_media",
               "settings": {
@@ -205,7 +368,7 @@
               },
               "blocks": {}
             },
-            "product_title_YXxMTj": {
+            "product_title": {
               "type": "product-title",
               "name": "t:names.product_title",
               "settings": {
@@ -230,7 +393,7 @@
               },
               "blocks": {}
             },
-            "price_JQzVV4": {
+            "product_price": {
               "type": "price",
               "name": "t:names.product_price",
               "settings": {
@@ -255,18 +418,18 @@
             }
           },
           "block_order": [
-            "product_card_gallery_677WP3",
-            "product_title_YXxMTj",
-            "price_JQzVV4"
+            "product_gallery",
+            "product_title",
+            "product_price"
           ]
         }
       },
-      "name": "Featured collection",
+      "name": "La Collection Aube",
       "settings": {
         "collection": "all",
         "layout_type": "grid",
         "carousel_on_mobile": false,
-        "max_products": 8,
+        "max_products": 4,
         "columns": 4,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
@@ -278,13 +441,54 @@
         "horizontal_alignment": "flex-start",
         "gap": 28,
         "color_scheme": "scheme-1",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 64,
+        "padding-block-end": 64
+      }
+    },
+    "excellence_nura": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<link rel=\"stylesheet\" href=\"{{ 'nura-custom.css' | asset_url }}\">\n<div class=\"nura-excellence\">\n  <div class=\"nura-excellence__title\">L'Excellence N\u016aRA</div>\n  <div class=\"nura-excellence__subtitle\">Ce qui nous distingue</div>\n  <div class=\"nura-excellence__grid\">\n    <div class=\"nura-excellence__item\">\n      <span class=\"nura-excellence__icon\">\u2662</span>\n      <div class=\"nura-excellence__item-title\">Mati\u00e8res Nobles</div>\n      <div class=\"nura-excellence__divider\"></div>\n      <div class=\"nura-excellence__item-text\">Lin fran\u00e7ais certifi\u00e9, coton bio \u00e9gyptien, soie naturelle. Chaque fibre est s\u00e9lectionn\u00e9e pour sa douceur, sa durabilit\u00e9 et son \u00e9l\u00e9gance.</div>\n    </div>\n    <div class=\"nura-excellence__item\">\n      <span class=\"nura-excellence__icon\">\u2726</span>\n      <div class=\"nura-excellence__item-title\">Confection \u00c9thique</div>\n      <div class=\"nura-excellence__divider\"></div>\n      <div class=\"nura-excellence__item-text\">Confectionn\u00e9 dans des ateliers europ\u00e9ens certifi\u00e9s. Des conditions de travail justes, une production responsable, un savoir-faire artisanal.</div>\n    </div>\n    <div class=\"nura-excellence__item\">\n      <span class=\"nura-excellence__icon\">\u25c7</span>\n      <div class=\"nura-excellence__item-title\">Pens\u00e9e Pour Durer</div>\n      <div class=\"nura-excellence__divider\"></div>\n      <div class=\"nura-excellence__item-text\">Des coupes intemporelles, des finitions soign\u00e9es, des pi\u00e8ces con\u00e7ues pour traverser les saisons. Moins mais mieux.</div>\n    </div>\n  </div>\n</div>",
+        "color_scheme": "scheme-1",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "story_nura": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"nura-story\">\n  <div class=\"nura-story__eyebrow\">Notre Manifeste</div>\n  <div class=\"nura-story__divider\"></div>\n  <h2 class=\"nura-story__heading\">La lumi\u00e8re comme fil conducteur</h2>\n  <p class=\"nura-story__text\">N\u016aRA est n\u00e9e d'une conviction simple : la mode pudique m\u00e9rite l'excellence. Chaque pi\u00e8ce est pens\u00e9e comme un \u00e9crin de lumi\u00e8re \u2014 des coupes qui \u00e9pousent le mouvement, des mati\u00e8res qui respirent, des d\u00e9tails qui font la diff\u00e9rence.</p>\n  <p class=\"nura-story__text\">Nous croyons qu'habiller sa foi ne devrait jamais \u00eatre un compromis. C'est une c\u00e9l\u00e9bration.</p>\n  <div class=\"nura-story__divider\"></div>\n  <div class=\"nura-story__signature\">\u2014 L'\u00e9quipe N\u016aRA</div>\n</div>",
+        "color_scheme": "scheme-4",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "rarete_nura": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"nura-rarete\">\n  <div class=\"nura-rarete__inner\">\n    <div class=\"nura-rarete__eyebrow\">\u00c9ditions Limit\u00e9es</div>\n    <h2 class=\"nura-rarete__heading\">La raret\u00e9 comme signature</h2>\n    <p class=\"nura-rarete__text\">Chaque collection est produite en quantit\u00e9s limit\u00e9es. Une fois \u00e9puis\u00e9e, elle ne revient pas. Cette raret\u00e9 n'est pas un artifice \u2014 c'est notre engagement envers une mode responsable et d\u00e9sirable.</p>\n    <a href=\"/collections/all\" class=\"nura-rarete__cta\">D\u00e9couvrir</a>\n  </div>\n</div>",
+        "color_scheme": "scheme-1",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "newsletter_nura": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"nura-newsletter\">\n  <div class=\"nura-newsletter__eyebrow\">Newsletter</div>\n  <h2 class=\"nura-newsletter__heading\">Entrez dans la lumi\u00e8re</h2>\n  <p class=\"nura-newsletter__text\">Acc\u00e8s prioritaire aux nouvelles collections et \u00e9ditions limit\u00e9es. Rejoignez la communaut\u00e9 N\u016aRA.</p>\n  {% form 'customer', id: 'nura-newsletter' %}\n  <div class=\"nura-newsletter__form\">\n    <input type=\"email\" name=\"contact[email]\" class=\"nura-newsletter__input\" placeholder=\"Votre adresse email\" required>\n    <button type=\"submit\" class=\"nura-newsletter__button\">S'inscrire</button>\n  </div>\n  {% endform %}\n</div>",
+        "color_scheme": "scheme-5",
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     }
   },
   "order": [
-    "hero_jVaWmY",
-    "product_list_fa6P9H"
+    "hero_nura",
+    "marquee_nura",
+    "product_list_nura",
+    "excellence_nura",
+    "story_nura",
+    "rarete_nura",
+    "newsletter_nura"
   ]
 }
